@@ -1,16 +1,15 @@
 Project Information:
 
-This program was developed by Kieran Dang, Ryan Hanveer, and myself, as part of our final project for the cybersecurity program
-at WWU. The main program is a GUI that allows the user to upload a spreadsheet and create custom video clips that feature student interviews
+This program was developed by Kieran D, Ryan H, and myself, as part of our final project for the cybersecurity program at WWU. The main program is a GUI that allows the user to upload a spreadsheet and create custom video clips that feature student interviews
 and the new buildings on campus.
 
 <img width="1283" height="746" alt="image" src="https://github.com/user-attachments/assets/4739f25c-53ed-4f22-ba6d-be9b79292db0" />
 
 
-## Development setup - (Windows) - Pythons venv (https://docs.python.org/3/library/venv.html)
+## Development setup - (Windows or Linux) - Pythons venv (https://docs.python.org/3/library/venv.html)
 Note:
 Requirements:
-- [Python 3](https://www.python.org/downloads/)
+- [Python 3](https://www.python.org/downloads/)- version 3.11 or earlier
 - [ImageMagick](https://imagemagick.org/script/download.php) 
 
 Set up a virtual python environment to isolate this project's dependencies:
