@@ -136,12 +136,7 @@ This method gives you full control over merging repositories.
    cd /path/to/Assignments
    ```
 
-2. **Create a subdirectory for each project:**
-   ```bash
-   mkdir -p Project1 Project2
-   ```
-
-3. **For each repository, perform a merge:**
+2. **For each repository, perform a merge:**
    ```bash
    # Add remote
    git remote add project1-remote <repo-url>
@@ -151,14 +146,13 @@ This method gives you full control over merging repositories.
    git checkout -b project1-merge project1-remote/main
    
    # Move all files into subdirectory
-   mkdir -p Project1-temp
-   git ls-tree -z --name-only HEAD | xargs -0 -I {} git mv {} Project1-temp/
+   mkdir -p Project1
+   git ls-files -z | xargs -0 -I {} git mv {} Project1/
    git commit -m "Move Project1 files to subdirectory"
    
    # Merge into main
    git checkout main
    git merge project1-merge --allow-unrelated-histories
-   git mv Project1-temp Project1
    git commit -m "Finalize Project1 integration"
    
    # Clean up
@@ -253,8 +247,24 @@ This preserves essential history while keeping the commit log clean with `--squa
 - Consider using shallow clones: `git clone --depth=1`
 
 ### Issue: Binary Files or Large Files
-- Use Git LFS before merging
-- Add to .gitattributes before the merge
+- Use Git LFS before merging:
+  ```bash
+  # Install Git LFS if not already installed
+  git lfs install
+  
+  # Track large file types
+  git lfs track "*.pdf"
+  git lfs track "*.zip"
+  git lfs track "*.mp4"
+  
+  # Commit the .gitattributes file
+  git add .gitattributes
+  git commit -m "Configure Git LFS"
+  ```
+- Migrate existing large files to LFS:
+  ```bash
+  git lfs migrate import --include="*.pdf,*.zip" --everything
+  ```
 
 ### Issue: Different Directory Structures
 - Restructure before merging
