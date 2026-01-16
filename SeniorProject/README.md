@@ -1,9 +1,8 @@
 Project Information:
 
-This program was developed by Kieran D, Ryan H, and myself, as part of our final project for the cybersecurity program at WWU. The main program is a GUI that allows the user to upload a spreadsheet and create custom video clips that feature student interviews
-and the new buildings on campus.
+This program was developed as a capstone project for the Cybersecurity program at Western Washington University. The project features a custom GUI that allows users to upload spreadsheet data to automatically generate personalized video clips showing student interviews and newly constructed campus buildings. The focus of the project was on building a reliable, user-friendly system that processes structured input data to produce multimedia output.
 
-<img width="1283" height="746" alt="image" src="https://github.com/user-attachments/assets/4739f25c-53ed-4f22-ba6d-be9b79292db0" />
+<img width="775" height="453" alt="image" src="https://github.com/user-attachments/assets/1e93c026-9e4e-4081-b042-a5494e4ccc32" />
 
 
 ## Development setup - (Windows or Linux) - Pythons venv (https://docs.python.org/3/library/venv.html)
