@@ -1,9 +1,11 @@
 Project Information:
 
-This program was developed as a capstone project for the Cybersecurity program at Western Washington University. The project features a custom GUI that allows users to upload spreadsheet data to automatically generate personalized video clips showing student interviews and newly constructed campus buildings. The focus of the project was on building a reliable, user-friendly system that processes structured input data to produce multimedia output.
+This program was developed as a capstone project for the Cybersecurity program at Western Washington University. The 
+project features a GUI that allows users to upload spreadsheets and generate personalized video clips. The focus of 
+the project was building a reliable, user-friendly system that processes spreadsheet data into multimedia output while
+ensuring secure file handling with the projects remote storage infrastructure.
 
 <img width="775" height="453" alt="image" src="https://github.com/user-attachments/assets/1e93c026-9e4e-4081-b042-a5494e4ccc32" />
-
 
 ## Development setup - (Windows or Linux) - Pythons venv (https://docs.python.org/3/library/venv.html)
 Note:
